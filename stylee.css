@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fff7df, #ffe7c2);
+    color: #3b2a1a;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+header h1,
+.titulo-receita {
+    font-size: 36px;
+    color: #8b4a14;
+    margin-bottom: 8px;
+}
+
+header h3,
+.subtitulo {
+    color: #6b4a2c;
+    font-weight: normal;
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card-receita {
+    width: 230px;
+    background-color: white;
+    text-decoration: none;
+    color: #3b2a1a;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-receita:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.card-receita img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+.card-receita span {
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Páginas das receitas */
+.pagina-receita {
+    padding: 25px;
+}
+
+.caixa-receita {
+    max-width: 900px;
+    margin: 25px auto;
+    background-color: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.banner-receita {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo-receita {
+    padding: 30px;
+}
+
+.titulo-receita {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7a5a39;
+}
+
+.bloco {
+    background-color: #fff6e8;
+    border-left: 6px solid #d9862c;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 22px;
+}
+
+.bloco h2 {
+    color: #8b4a14;
+    margin-bottom: 12px;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 18px;
+    background-color: #d9862c;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-voltar:hover {
+    background-color: #a85f1f;
+}
+
+@media (max-width: 600px) {
+    header h1,
+    .titulo-receita {
+        font-size: 28px;
+    }
+
+    .banner-receita {
+        height: 220px;
+    }
+
+    .conteudo-receita {
+        padding: 22px;
+    }
+}
+
+
+/* Easter egg bem escondido */
+.easter-egg {
+    position: fixed;
+    right: 10px;
+    bottom: 8px;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    text-decoration: none;
+    opacity: 0.08;
+    filter: grayscale(100%);
+    transform: rotate(20deg);
+    transition: opacity 0.2s, transform 0.2s, filter 0.2s;
+}
+
+.easter-egg:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.8) rotate(0deg);
+}
+
+.pagina-secreta {
+    background: linear-gradient(135deg, #fff1c7, #ffe0a3);
+}
+
+.banner-secreto {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    background: linear-gradient(135deg, #ffcf70, #ff9f43);
+}
+
+.bloco-secreto {
+    border-left-color: #ff9f43;
+}
